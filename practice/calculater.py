@@ -44,9 +44,8 @@
 
 # print(Calcu(4,6,"a"))
 
-def Show(name,age,money):
-    if age < 18:
-        return "you are not allowed"
+
+    
     
     
    
