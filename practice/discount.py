@@ -16,4 +16,4 @@ def DiscountTrack(ticket,name,price,voucher=False, discount=0):
     return f"Thank you {name}.Here is your change {price-total_price}"
 
 
-print(DiscountTrack(,"ram",5000, voucher=True))
+print(DiscountTrack(11,"ram",5000, voucher=True))
