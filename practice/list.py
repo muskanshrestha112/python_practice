@@ -13,6 +13,13 @@ mix_list = ['ram', 1, True]
 #     print(num)
 
 # print(len(str_list))
+# str_list.append('anjila')   
+# str_list.insert(0,'anjila')   
+# str_list.remove('devi')
+# str_list.pop(1) 
 
-print(str_list)
+# str_list.pop()   
+# str_list = []
+str_list.extend(boolean_list)         
+print(str_list[:3:-1])
 
