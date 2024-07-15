@@ -3,6 +3,11 @@ str_list = ['ram','devi','tarun','muskan']
 int_list = [1, 2, 3, 4, 5]
 boolean_list = [True, False]
 mix_list = ['ram', 1, True]
+
+
+for i in range (len(str_list)):
+    print(i)
+
 # print(type(str_list))
 # print(str_list[2])
 # print(int_list[-3])
@@ -20,6 +25,6 @@ mix_list = ['ram', 1, True]
 
 # str_list.pop()   
 # str_list = []
-str_list.extend(boolean_list)         
-print(str_list[:3:-1])
+# str_list.extend(boolean_list)         
+# print(str_list)
 
