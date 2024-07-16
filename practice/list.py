@@ -1,10 +1,10 @@
 # String list
-str_list = ['ram','devi','tarun','muskan']
-int_list = [1, 2, 3, 4]
-boolean_list = [True, False]
-mix_list = ['ram', 1, True]
+# str_list = ['ram','devi','tarun','muskan']
+# int_list = [1, 2, 3, 4]
+# boolean_list = [True, False]
+# mix_list = ['ram', 1, True]
 
-# str_list.extend(int_list)
+#  str_list.extend(int_list)
 # print(str_list)
 
 # for a in range(len(str_list)):
@@ -44,15 +44,15 @@ mix_list = ['ram', 1, True]
 # print(str_list)
 
 
-muskan = False
-num = 0
+# muskan = False
+# num = 0
 
-while not muskan  :
-    # break 
-    print(num)
+# while not muskan  :
+#     # break 
+#     print(num)
       
-    if num == 5:    
-        muskan = True
-    num += 1  
+#     if num == 5:    
+#         muskan = True
+#     num += 1  
         
 
