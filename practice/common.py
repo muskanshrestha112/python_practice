@@ -1,6 +1,24 @@
-string_one = ["I love football "]
-string_two = ["I don't love football"]
-string_three =[]
+# 
+
+# a=string_one.split()
+# b=string_two.split()
+# a.extend(b)
+# # print(set(a.extend(b)))
+# print(set(a))
+
+
+# for a in string_one.split():
+#     if a in string_two.split():
+#         string_three.append(a)
+        
+# print(string_three)
+
+# for a in string_two.split():
+#     if a not in string_one.split():
+#         string_three.append(a)
+        
+# print(string_three)
+
 
 # def common_string(string_one, string_two):
 #     string_one = set(string_one)
@@ -31,33 +49,45 @@ string_three =[]
 # print(list3)
 
 #output 1
-for a in string_one:
-    if a not in string_two:
-        if a not in string_three:
-            string_three.append(a)                         
-print(string_three)
+# for a in string_one:
+#     if a not in string_two:
+#         if a not in string_three:
+#             string_three.append(a)                         
+# print(string_three)
 
 
 #output
-for a in string_two:
-    if a not in string_one:
-        if a not in string_three:
-            string_three.append(a)                         
-print(string_three)
+# for a in string_two:
+#     if a not in string_one:
+#         if a not in string_three:
+#             string_three.append(a)                         
+# print(string_three)
 
 
  
 
- #output
-for i in string_two :
-    string_one.append(i)
-    print(string_one)
+#  #output
+# for i in string_two :
+#     string_one.append(i)
+#     print(string_one)
 
-for i in string_two :
-    string_one.append(i)
-    print(i)
+# for i in string_two :
+#     string_one.append(i)
+#     print(i)
 
 
 
 # list(set(string_one).union(set(string_two)))
 # print(list)
+
+
+
+mylist=[2, 100, 2, 5, 1, 3, 55, 21, 69] 
+a=list(set(mylist))
+# a.sort(reverse= True)
+# a.reverse()
+a.sort()
+print(a[::-1])
+
+# b=(1, 2, 3, 4)
+# b.
