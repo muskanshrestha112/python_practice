@@ -54,5 +54,15 @@
 #     if num == 5:    
 #         muskan = True
 #     num += 1  
+
+# my_list = ['pink', 'red', 'black', 'white', 'blue']
+# print(my_list[0],my_list[4])
+# print(my_list.index('black'))
+# print(my_list[-2::-2])
+
+my_list = [1, 2, 5, 8, 9, 4 ]
+a = sum(my_list)
+average = a/2 
+print(average)
         
 
