@@ -74,13 +74,18 @@ rank = {
 # tiktak["hobbies"] = "dance" #add elements
 # print(tiktak)
 
-
+import json
 list1 = ["Name", "Age", "Address"]
 list2 = ["Muskan", "twenty", "maitidevi"]
 mylist = dict(zip(list1, list2))
 print(mylist)
-for x in mylist.items():
-    print(x)
+
+a = json.dumps(mylist)
+print(a)
+
+
+# for x in mylist.items():
+#     print(x)
 
 
 
@@ -111,12 +116,12 @@ for multiple paragraph commenting
 #     print(x, y)
 
 
-
+#deleting a key
 # del tiktak["phone"]
 # print(tiktak)
 # print(tiktak["Sidechicks"])
 
-
+#print key exists
 # print(tiktak.get("phone", "phone does not exsits"))
 
 # if "phone" in tiktak:
@@ -126,16 +131,22 @@ for multiple paragraph commenting
 
 
 
+#print a lsit in dict
+#  print(tiktak["Sidechicks"])
 
-# # print(tiktak["Sidechicks"])
+#print a specific value form dic list
 # print(tiktak["Sidechicks"][1])
 
+
+#print specific value
 # print(type(tiktak))
 # print(tiktak["Age"])
+
+#print the keys
 # a = tiktak.keys()
 # print(a)
 
 
-
-# toktok = dict(name = "Tarun", age = 50, occupation = "my bf")
+#adding an element
+# toktok = dict(name = "Tarun", age = 50, occupation = "my bf") 
 # print(toktok.keys())
