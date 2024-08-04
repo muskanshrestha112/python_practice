@@ -74,14 +74,14 @@ rank = {
 # tiktak["hobbies"] = "dance" #add elements
 # print(tiktak)
 
-import json
-list1 = ["Name", "Age", "Address"]
-list2 = ["Muskan", "twenty", "maitidevi"]
-mylist = dict(zip(list1, list2))
-print(mylist)
+# import json
+# list1 = ["Name", "Age", "Address"]
+# list2 = ["Muskan", "twenty", "maitidevi"]
+# mylist = dict(zip(list1, list2))
+# print(mylist)
 
-a = json.dumps(mylist)
-print(a)
+# a = json.dumps(mylist)
+# print(a)
 
 
 # for x in mylist.items():
