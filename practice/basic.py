@@ -81,9 +81,31 @@ print(myVariablename)'''
 # print('to' in txt)
 # a='mommy'
 # print(a[1:3])
-x=1
-y=''
-print(bool(x))
-print(bool(y))
+# x=1
+# y=''
+# print(bool(x))
+# print(bool(y))
 
 
+# name = input("enter your name:")
+# age = int(input("enter you age:"))
+
+# print(f"My name is {name} and my age is {age}.")
+# print(type(age))
+
+num1 = int(input("enter a num:"))
+num2 = int(input("enter second num:"))
+# total = num1 + num2
+# print(total)
+# print(type(total))
+
+m = 3
+n = 6
+
+def myadd(num1, num2):
+    total = num1 + num2
+    return total
+
+print(myadd(num1, num2))
+print(myadd(m, n))
+print(myadd(4,5))
