@@ -6,7 +6,7 @@ print("2) Sub")
 print("3) Mul")
 print("4) Div")
 
-opr = (input("Choose a option from the above operation:"))
+opr = (input("Choose an option from the above operation:"))
 
 if opr == "1":
     opr = num1 + num2
