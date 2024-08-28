@@ -34,19 +34,68 @@
 
 
 
-common = []
-unique = []
-first = "I love football"
-second = "I dont love football"
+# common = []
+# unique = []
+# first = "I love football"
+# second = "I dont love football"
 
-for i in second.split():
-    if i not in first.split():
-        unique.append(i)
-    else:
-        common.append(i)
+# for i in second.split():
+#     if i not in first.split():
+#         unique.append(i)
+#     else:
+#         common.append(i)
     
-print(common)
-print(unique)    
+# print(common)
+# print(unique)    
+
+
+
+
+
+
+
+# num = "988-8787-5444-1212"
+# # output = "***-****-****-1212"
+
+# def converter(num):
+#     first_part = num.split("-")[:-1] # make them stars
+#     second_part = num.split("-")[-1] # keep as it is
+#     result = "" #to store the star
+#     for i in first_part: # looping in list to make them stars
+#         star = len(i) * "*" # converting length of number to stars
+#         result = result + star + "-" # adding stars to the result variable 
+#     return result + second_part #adding star and last number to return
+
+# print(converter(num))    
+
+
+
+number = [ "988-8787-5444-1212","7878-5454-8787-7878"]
+# output = ["***-****-****-1212",  "****-****-****-7878"]
+
+
+num = ",".join(number)
+print(num)
+def converter(num):
+    for i in num.split(","):
+        first_part = num.split("-")[:-1] 
+        second_part = num.split("-")[-1] 
+        result = "" 
+        for i in first_part: 
+            star = len(i) * "*" 
+            result = result + star + "-" 
+        return result + second_part 
+    
+    
+print(converter(num))    
+
+
+
+
+   
+    
+
+
 
 
 
