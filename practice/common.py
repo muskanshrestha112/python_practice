@@ -82,12 +82,12 @@
 
 
 
-mylist=[2, 100, 2, 5, 1, 3, 55, 21, 69] 
-a=list(set(mylist))
+# mylist=[2, 100, 2, 5, 1, 3, 55, 21, 69] 
+# a=list(set(mylist))
 # a.sort(reverse= True)
 # a.reverse()
-a.sort()
-print(a[::-1])
+# a.sort()
+# print(a[::-1]) #reverse 
 
 # b=(1, 2, 3, 4)
 # b.

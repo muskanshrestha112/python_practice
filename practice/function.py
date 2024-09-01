@@ -70,33 +70,28 @@
 
 
 
-number = [ "988-8787-5444-1212","7878-5454-8787-7878"]
+numbers = [ "988-8787-5444-1212","7878-5454-8787-7878"]
 # output = ["***-****-****-1212",  "****-****-****-7878"]
+output = []
 
 
-num = ",".join(number)
-print(num)
-def converter(num):
-    for i in num.split(","):
-        first_part = num.split("-")[:-1] 
-        second_part = num.split("-")[-1] 
-        result = "" 
-        for i in first_part: 
-            star = len(i) * "*" 
-            result = result + star + "-" 
-        return result + second_part 
+def converter(number):
+    first_part = number.split("-")[:-1] 
+    second_part = number.split("-")[-1] 
+    result = "" 
+    for i in first_part: 
+        star = len(i) * "*" 
+        result = result + star + "-" 
+    return result + second_part 
     
-    
-print(converter(num))    
+for i in numbers:
+    output.append(converter(i))
+
+print(output)
+
 
 
 
 
    
     
-
-
-
-
-
-# print(num.split("-"))
