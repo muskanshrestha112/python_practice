@@ -1,9 +1,9 @@
 
-f = open("num.txt","r")
-number = f.read()
-# print(number)
+# f = open("num.txt","r")
+# number = f.read()
+# # print(number)
 
-# output = []
+# # output = []
 
 def converter(number):
     for x in number:
@@ -19,17 +19,32 @@ def converter(number):
 
 print(converter(number))
     
-# for i in number:
-#     output.append(converter(i))
-# print(output)
+# # for i in number:
+# #     output.append(converter(i))
+# # print(output)
 
 
-f = open("num.txt","w")
-f.write(number)
-f.close()
+# f = open("num.txt","w")
+# f.write(number)
+# f.close()
 
 
-f = open("num.txt","r")
-print(f.read())
+# f = open("num.txt","r")
+# print(f.read())
 
+# Read files
+file = open('num.txt')
+data_list = file.readlines()
+file.close()
 
+# Convert numbers to stars and store then to new_data
+new_data = []
+for i in data_list:
+    new_data.append(converter(i))  # i: aauta number linxa => converter: Convert => new_data.append: Append to new_data
+    
+file = open('num.txt', 'w')
+    
+for i in new_data:    
+    file.writelines(i)
+
+file.close()
