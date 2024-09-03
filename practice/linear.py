@@ -13,9 +13,6 @@
 
 
 
-a = "My name is Tarun"
-# output = ['My', "name", "is", "Tarun"]
-output = []
 
 
 # for i in a.split():
@@ -36,27 +33,40 @@ output = []
             
 # print(output)
 
-#output 
+
+
 # def linear(a):
 #     my_list = a.split()
-#     for i in my_list:
-#         return i
-       
+#     return my_list
+# output = linear(a)
+# print(output)
 
-# for i in a:
-#     output.append(linear(i))
+a = "My name is Tarun"
+# output = ['My', "name", "is", "Tarun"]
+output = []
+
+
+# def splt(a):
+#     for i in a:
+#         if i not in a:
+#             output.append(i)        
     
-# print(output)
+# print(splt(a))
 
 
 
-
-def linear(a):
-    my_list = a.split()
-    return my_list
-output = linear(a)
-print(output)
-
-# for i in a:
-#     output.append(i)
-# print(output)
+def my_split(data):
+    output = [] #to contain all the data in the list 
+    holder = "" # to hold the string to make a whole list element, My => list => empty
+    for i in range(len(data)): # looping through all the index of string with range
+        if data[i] == " " : # if a space occurs the condition is met 
+            output.append(holder) # sending holders data to output list 
+            holder = "" # holded data are reset to null
+        else:
+            holder = holder + data[i]
+            if i + 1 == len(data): # list = 10 and i = 9 + 1 = 10 Finally, list == i
+                output.append(holder)
+            return output
+            
+        
+print(my_split(a))
