@@ -79,13 +79,13 @@
 
 
 
-a = "My-name-is-Tarun"
+
 # a = ['M', "y", " ", "n", "a", "m", "e", " ", "i", "s"]
 # output = ['My', "name", "is", "Tarun"]
 
 # print(a.split())
 
-
+a = "My-name-is-Tarun"
 
 def my_split(data, sign):
     output = [] # To contain all the data in list type 
