@@ -41,9 +41,8 @@
 # output = linear(a)
 # print(output)
 
-a = "My name is Tarun"
 # output = ['My', "name", "is", "Tarun"]
-output = []
+# output = []
 
 
 # def splt(a):
@@ -55,18 +54,51 @@ output = []
 
 
 
-def my_split(data):
-    output = [] #to contain all the data in the list 
-    holder = "" # to hold the string to make a whole list element, My => list => empty
-    for i in range(len(data)): # looping through all the index of string with range
-        if data[i] == " " : # if a space occurs the condition is met 
-            output.append(holder) # sending holders data to output list 
-            holder = "" # holded data are reset to null
-        else:
-            holder = holder + data[i]
-            if i + 1 == len(data): # list = 10 and i = 9 + 1 = 10 Finally, list == i
-                output.append(holder)
-            return output
+
+
+# a = "My name is Tarun"
+
+
+# def my_split(data):
+#     output = [] #to contain all the data in the list 
+#     holder = "" # to hold the string to make a whole list element, My => list => empty
+#     for i in range(len(data)): # looping through all the index of string with range
+#         if data[i] == " " : # if a space occurs the condition is met 
+#             output.append(holder) # sending holders data to output list 
+#             holder = "" # holded data are reset to null
+#         else:
+#             holder = holder + data[i]
+#             if i + 1 == len(data): # list = 10 and i = 9 + 1 = 10 Finally, list == i
+#                 output.append(holder)
+#     return output
             
         
-print(my_split(a))
+# print(my_split(a))
+
+
+
+
+
+a = "My-name-is-Tarun"
+# a = ['M', "y", " ", "n", "a", "m", "e", " ", "i", "s"]
+# output = ['My', "name", "is", "Tarun"]
+
+# print(a.split())
+
+
+
+def my_split(data, sign):
+    output = [] # To contain all the data in list type 
+    holder = "" # To hold string to make a whole list element , My => list => emty
+    for i in range(len(data)): # looping through all the index of string with range 
+        # print('Check :', i + 1 == len(data), i + 1, len(data))
+        if data[i] == sign: # if a space occurs the condition is met
+            output.append(holder) # sending holders data to output list
+            holder = "" # holded data are reset to null
+        else:
+            holder = holder + data[i] 
+            if i + 1 == len(data): # list = 10 and i = 9 + 1 = 10 Finally, list == i
+                output.append(holder)
+    return output
+    
+print(my_split(a, "-"))
