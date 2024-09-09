@@ -18,8 +18,8 @@
 #     print(f"Hello {i}, how are you?")
 
 
-# num_list = "123456789"
-# print(num_list [::1])
+num_list = "432156789"
+print(num_list [::-1])
 
 
 
@@ -75,19 +75,19 @@ numbers = [ "988-8787-5444-1212","7878-5454-8787-7878"]
 output = []
 
 
-def converter(number):
-    first_part = number.split("-")[:-1] 
-    second_part = number.split("-")[-1] 
-    result = "" 
-    for i in first_part: 
-        star = len(i) * "*" 
-        result = result + star + "-" 
-    return result + second_part 
+# def converter(number):
+#     first_part = number.split("-")[:-1] 
+#     second_part = number.split("-")[-1] 
+#     result = "" 
+#     for i in first_part: 
+#         star = len(i) * "*" 
+#         result = result + star + "-" 
+#     return result + second_part 
     
-for i in numbers:
-    output.append(converter(i))
+# for i in numbers:
+#     output.append(converter(i))
 
-print(output)
+# print(output)
 
 
 

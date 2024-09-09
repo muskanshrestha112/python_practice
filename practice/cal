@@ -1,0 +1,19 @@
+
+def cal(num1, num2, operater):
+    if operater == "+":
+        return num1 + num2
+
+    elif operater == "-":
+        return num1 - num2
+
+    elif operater == "*":
+        return num1 * num2
+
+    elif operater == "/":
+        return num1 / num2
+    
+
+print(cal(1, 4, "-"))
+
+
+
